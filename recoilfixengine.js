@@ -85,36 +85,36 @@ class RecoilFixEngine {
 
     this.recoilMap = {
       default: {
-        recoilX: 0.01,
-        recoilY: 0.01,
+        recoilX: 0.0,
+        recoilY: 0.0,
         smooth: 0.85,
         pattern: [1.0],
-        recoveryRate: 0.95
+        recoveryRate: 1.0
       },
       mp40: {
-        recoilX: 0.08,
-        recoilY: 0.12,
+        recoilX: 0.0,
+        recoilY: 0.0,
         smooth: 0.78,
         pattern: [1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8],
         recoveryRate: 0.88
       },
       ump: {
-        recoilX: 0.04,
-        recoilY: 0.07,
+        recoilX: 0.0,
+        recoilY: 0.0,
         smooth: 0.82,
         pattern: [1.0, 1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.3, 2.5, 2.7],
         recoveryRate: 0.90
       },
       m1887: {
-        recoilX: 0.05,
-        recoilY: 0.08,
+        recoilX: 0.0,
+        recoilY: 0.0,
         smooth: 0.75,
         pattern: [1.0, 1.5, 2.0, 2.5],
         recoveryRate: 0.85
       },
       ak: {
-        recoilX: 0.09,
-        recoilY: 0.15,
+        recoilX: 0.0,
+        recoilY: 0.0,
         smooth: 0.72,
         pattern: [1.0, 1.3, 1.6, 1.9, 2.2, 2.5, 2.8, 3.1, 3.4, 3.7],
         recoveryRate: 0.85
