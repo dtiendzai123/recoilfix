@@ -236,7 +236,12 @@ class RecoilFixEngine {
     };
   }
 }
+const GamePackages = {
+  GamePackage1: "com.dts.freefireth",
+  GamePackage2: "com.dts.freefiremax"
+};
 
+// ===
 // 🔧 Khởi tạo thử
 const recoilEngine = new RecoilFixEngine();
 recoilEngine.setWeapon("mp40");
