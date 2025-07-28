@@ -60,7 +60,7 @@ class Vector3 {
 }
 
 const EPSILON = 1e-6;
-const SENSITIVITY_MULTIPLIER = { x: 0.52, y: 0.49 };
+const SENSITIVITY_MULTIPLIER = { x: 0.001, y: 0.001 };
 
 function applyBindpose(position, bindpose) {
   const { x, y, z } = position;
