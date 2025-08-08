@@ -1,3 +1,7 @@
+let body = $response.body;
+
+// Nếu là JSON thì parse thử
+try { body = JSON.parse($response.body); } catch (e) {}
 // 🖱️ Hàm mock gửi input chuột
 function sendInputToMouse({ deltaX, deltaY }) {
   console.log(`🎯 Mouse Input → ΔX=${deltaX.toFixed(3)} | ΔY=${deltaY.toFixed(3)}`);
@@ -266,3 +270,8 @@ const previousPositions = [
 
 const result = recoilEngine.aimToHead(camera, headWorld, true, previousPositions);
 console.log("📊 Performance metrics:", result);
+if (typeof body === "object") {
+  $done({ body: JSON.stringify(body) });
+} else {
+  $done({ body });
+}
